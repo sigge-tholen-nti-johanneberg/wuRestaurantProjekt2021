@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    height: 200vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+    'he he'
+    'ma as'
+    'ma as'
+    ;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 200px  60% 20%;
+    background-color: teal;
+    
+}
+
+h1 {
+    margin: 0;
+    color: darkcyan;
+    text-shadow: 1.5px 1.5px black;
+}
+header {
+    grid-area: he;
+    margin: inherit;
+    background-color: coral;
+    display: flex; 
+    height: 200px;
+}
+
+nav {
+    margin: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    height: 30px;
+    width: 1vh;
+    position: absolute;
+    top: 200;
+    align-self: center;
+}
+
+main { 
+    grid-area: ma;
+    
+    margin: inherit;
+    display: flex;
+    flex-direction: row;
+}
+aside {
+    grid-area: as;
+    background-color: lightseagreen;
+
+}
+footer { 
+    grid-area: fo;
+    background-color: #aaf0d1;
+    position: fixed;
+    bottom: 0px;
+    height: 20%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.navlink {
+    background-color: coral;
+    border-radius: 0px 0px 6px 6px;
+    padding: 10px;
+
+}
+a {
+    color: darkcyan;
+    text-shadow: 0,5px 0,5px black;
+}
+.pad-mat {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+.wrap {
+    height: 200vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+    'he he'
+    'ma ma'
+    'ma ma'
+    ;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 200px  60% 20%;
+    background-color: teal;
+}
